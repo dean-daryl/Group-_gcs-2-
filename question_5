@@ -1,0 +1,3 @@
+!#/bin/bash
+read -p "enter a directory path: " path
+[ -d "$path" ] && echo "List of all files in $path" || echo "$path is not a valid directory."
