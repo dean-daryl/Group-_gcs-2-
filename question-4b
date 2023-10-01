@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script to create folders with names from text file
+i=0
+while read -ra array
+do
+	$(mkdir ${array[i]})
+	(i+=1)
+done < folder_names.txt
